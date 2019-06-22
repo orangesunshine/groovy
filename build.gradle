@@ -1,5 +1,4 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-apply plugin: 'plugin.test'
 buildscript {
     repositories {
         google()
@@ -9,7 +8,6 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.orange.groovy.gradle.plugin:groovylib:1.0.0'
         classpath 'com.android.tools.build:gradle:3.4.0'
         classpath 'com.android.tools.build:gradle:2.0.0-beta6'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'

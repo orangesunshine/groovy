@@ -12,12 +12,12 @@ repositories {
 }
 
 group='com.orange.groovy.gradle.plugin'
-version='1.0.0'
+version='1.0.1'
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: uri('../repo'))
-        }
-    }
-}
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: uri('../repo'))
+//        }
+//    }
+//}

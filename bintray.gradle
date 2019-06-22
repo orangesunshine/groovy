@@ -5,7 +5,7 @@ def projectName = "groovylib"
 def mavenDesc = 'your desc'
 def baseUrl = 'https://github.com/orangesunshine'
 def siteUrl = baseUrl
-def gitUrl = "${baseUrl}/groovy.git"
+def gitUrl = "${baseUrl}/groovy/tree/master/groovylib"
 def issueUrl = "${baseUrl}/groovy/issues"
 
 def licenseIds = ['Apache-2.0']
@@ -14,6 +14,7 @@ def licenseUrls = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
 def inception = '2019-06-22'
 
 def username = 'orangesunshine'
+def group = 'com.orange.groovy.gradle.plugin'
 
 install {
     repositories {
@@ -25,9 +26,9 @@ install {
                 url siteUrl
 
                 // Archive
-                groupId project.group
-                artifactId archivesBaseName
-                version project.version
+                groupId group
+                artifactId projectName
+                version "1.0.1"
 
                 // License
                 inceptionYear inception
